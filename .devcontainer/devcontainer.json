@@ -1,16 +1,16 @@
-// More info: https://containers.dev/implementors/json_reference/
 {
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-18-bullseye",
-	"features": {
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
-	},
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"mads-hartmann.bash-ide-vscode",
-				"dbaeumer.vscode-eslint"
-			]
-		}
-	},
-	"postCreateCommand": "npm install -g @devcontainers/cli"
+    "name": "C Development Container",
+    "image": "ghcr.io/ling-lang/42_dev_env_scripts:0.0.2",
+    "customizations":{
+        "vscode":{
+            "settings":
+            {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": 
+            [
+                "ms-vscode.cpptools"
+            ]
+        }
+    }
 }
